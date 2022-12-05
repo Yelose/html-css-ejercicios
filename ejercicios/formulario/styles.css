@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+    width: fit-content;
+}
+
+form {
+    padding: 20px;
+}
+.outlined {
+    border: 2px solid gray;
+    position: relative;
+}
+.float-over{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background-color: white;
+    padding: 0 2px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de un producto</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Información sobre el producto</h1><br>
+    <div class="outlined">
+        <form action="post">
+            <p class="float-over">Datos Básicos</p>
+            <label for="name">Nombre</label><br>
+            <input type="text" name="name"><br>
+            <label for="description">Descripción</label><br>
+            <textarea name="description" id="description" cols="60" rows="5"></textarea><br><br>
+            <label for="image">Foto</label>
+            <input type="file"><br><br>
+            <input type="checkbox" id="visitors-counter" name="visitors-counter">
+            <label for="visitors-counter">Añadir contador de visitas</label>
+        </form>
+    </div><br>
+    <div class="outlined">
+        <p class="float-over">Datos económicos</p>
+        <form action="post">
+            <label for="price">Precio</label>
+            <input type="text" size="7"><span> €</span>
+            <label for="taxes">Impuestos</label>
+            <select name="taxes" id="taxes">
+                <option value="4">4%</option>
+                <option value="7">7%</option>
+                <option value="16">16%</option>
+                <option value="25">25%</option>
+            </select><br><br>
+            <label for="promotion">Promoción</label><br>
+            <input type="radio" name="promo" value="0"> Ninguno</input><br>
+            <input type="radio" name="promo" value="trgratis"> Transporte gratuito</input><br>
+            <input type="radio" name="promo" value="desc5"></input> Descuento 5%<br>
+        </form>
+
+    </div>
+</body>
+</html>

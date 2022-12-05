@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <h1>Rellena tu CV</h1>
+    <br>
+    <div class="outlined">
+        <p class="float-over">Datos personales</p>
+        <form action="post">
+            <label for="provincia">Provincia</label> <br>
+            <select name="provincia" id="provincia">
+                <option value="0">- selecciona -</option>
+                <option value="madrid">Madrid</option>
+                <option value="asturias">Asturias</option>
+                <option value="barcelona">Barcelona</option>
+            </select> <br> <br>
+            <label for="nacimiento">Fecha de nacimiento</label><br>
+            <input type="number" min="1" max="31"><span> de </span>
+            <select name="meses" id="meses">
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+            </select> <span> de </span>
+            <input type="number" min="1900" max="2023"><br><br>
+            <label for="interes">Temas de interés</label><br>
+            <select name="interes" id="interes" multiple>
+                <option value="1">Administración de bases de datos</option>
+                <option value="2">Análisis y programación</option>
+                <option value="3">Arquitectura</option>
+                <option value="4">Calidad</option>
+                <option value="5">ERP, CRM, Business Intelligence</option>
+                <option value="6">Agricultura y ganadería</option>
+                <option value="7">Música e instrumentos musicales</option>
+                <option value="8">Otra cosa</option>
+                <option value="9">No está en la lista</option>
+            </select>
+        </form>
+    </div>
+
+</body>
+
+</html>
